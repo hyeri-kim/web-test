@@ -1,0 +1,170 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-weight: 500;
+}
+
+.container {
+    text-align: center;
+    width: 1320px;
+    height: 570px;
+    margin: 0px 300px;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    top: 52px;
+    width: 1320px;
+    height: 80px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.show_info {
+    width: 80px;
+    height: 80px;
+}
+
+.list_black {
+    width: 20px;
+    height: 17px;
+    margin: 33px 30px;
+}
+
+.nav {
+    display: flex;
+    margin: 28px 230px;
+    font-size: 18px;
+}
+
+.nav>li>a:hover {
+    color: #D8D7D7;
+}
+
+#Contents,
+#Analysis {
+    margin-left: 250px;
+}
+
+/* subnav_contents */
+.subnav_contents {
+    display: none;
+    position: absolute;
+    left: 550px;
+    z-index: 1;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_contents>a {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_contents>a:hover {
+    font-weight: 500;
+}
+
+#Contents:hover>.subnav_contents {
+    display: block;
+}
+
+/* subnav_analysis */
+.subnav_analysis {
+    display: none;
+    position: absolute;
+    left: 880px;
+    z-index: 1;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_analysis>a {
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_analysis>a:hover {
+    font-weight: 500;
+}
+
+#Analysis:hover>.subnav_analysis {
+    display: block;
+}
+
+.show_nav {
+    width: 80px;
+    height: 80px;
+}
+
+.show_nav_black {
+    width: 15px;
+    height: 8px;
+    margin: 37px 32px;
+}
+
+.title {
+    margin-top: 260px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.section {
+    margin-top: 90px;
+}
+
+.section > label {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 30px;
+}
+
+.section input[type="radio"] {
+    display: none;
+}
+
+.section input[type=radio]:checked + label {
+    font-weight: 500;
+    text-decoration: underline;
+}
+.section input[type=radio]:hover + label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.gray_bg {
+    display: inline-block;
+    width: 1920px;
+    height: 510px;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.chart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 510px;
+}
+
+canvas {
+    position: absolute;
+    top: 130px;
+    left: 835px;
+}

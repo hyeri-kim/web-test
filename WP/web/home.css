@@ -1,0 +1,451 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none; /* 목록에 점 없애기 */
+    text-decoration: none; /* 하이퍼링크에 글자 색이랑 밑줄 없애기 */
+    border-collapse: collapse; /* 표에 선 합치기 */
+    /* 기본 마진, 패딩 없애기 */
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-weight: 500;
+}
+
+.wrap {
+    width: 1920px;
+    height: 6480px;
+}
+
+.main {
+    display: block;
+    width: 1920px;
+    height: 1080px;
+}
+
+.intro {
+    text-align: center;
+    height: 900px;
+    background-image: url("image/home_bg.png");
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    width: 1320px;
+    height: 1080px;
+    margin: 0px 300px;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    top: 52px;
+    width: 1320px;
+    height: 80px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.show_info {
+    width: 80px;
+    height: 80px;
+}
+
+.list_black {
+    width: 20px;
+    height: 17px;
+    margin: 33px 30px;
+}
+.nav {
+    display: flex;
+    margin: 28px 230px;
+    font-size: 18px;
+}
+
+.nav > li > a:hover {
+    color: #A8A8A8;
+}
+
+#Contents, #Analysis {
+    margin-left: 250px;
+}
+/* subnav_contents */
+.subnav_contents {
+    display: none;
+    position: absolute;
+    left: 550px;
+    z-index: 1;
+    background-color: #fff;
+    opacity: 0.8;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_contents > a {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_contents > a:hover {
+    font-weight: 500;
+}
+
+#Contents:hover > .subnav_contents {
+    display: block;
+}
+/* subnav_analysis */
+.subnav_analysis {
+    display: none;
+    position: absolute;
+    left: 880px;
+    z-index: 1;
+    background-color: #fff;
+    opacity: 0.8;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_analysis > a {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_analysis > a:hover {
+    font-weight: 500;
+}
+
+#Analysis:hover >.subnav_analysis {
+    display: block;
+}
+
+.show_nav {
+    width: 80px;
+    height: 80px;
+}
+
+.show_nav_black {
+    width: 15px;
+    height: 8px;
+    margin: 37px 32px;
+}
+
+.title {
+    margin-top: 270px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 110px;
+    color: #fff;
+}
+
+.Subhead {
+    font-weight: 300;
+    color: #fff;
+    font-size: 32px;
+}
+
+.vm_box {
+    margin-top: 90px;
+    height: 60px;
+}
+
+.vm_inner {
+    width: 180px;
+    height: 60px;
+    margin: 0px auto;
+    border: 1px solid #fff;
+}
+
+.vm_inner > a {
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.Issue {
+    width: 1920px;
+    height: 5400px;
+    background-color: #F6F6F6;
+}
+
+.Issue_1, .Issue_2, .Issue_3, .Issue_4, .Issue_5 {
+    width: 1920px;
+    height: 1080px;
+}
+
+.Issue_1_inner {
+    margin: 0px 300px;
+    text-align: left;
+    width: 1320px;
+    height: 1080px;
+}
+
+.title_1 {
+    position: relative;
+    top: 100px;
+}
+
+.title_1 > div {
+    font-size: 60px; 
+}
+
+.title_1 > .first_row {
+    font-weight: 300;
+}
+
+.title_1 > .second_row {
+    font-weight: 500;
+}
+
+.Issue_1_inner > .empty_box {
+    position: absolute;
+    top: 1478px;
+    left: 610px;
+    width: 382px;
+    height: 530px;
+    background-color: #D8D7D7;
+}
+
+.YoonYeojung {
+    background-image: url("image/YoonYeojung.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 1542px;
+    left: 807px;
+    width: 573px;
+    height: 297px;
+}
+
+.Issue_1_inner > .msg {
+    position: absolute;
+    top: 1859px;
+    left: 1022px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.date {
+    /* 날짜 폰트 스타일 */
+    font-size: 18px;
+    font-weight: 300;
+    color: #A8A8A8;
+}
+
+.Issue_1_inner > .date {
+    position: absolute;
+    top: 1986px;
+    left: 1022px;
+}
+
+.Issue_2_inner {
+    margin-left: 300px;
+    height: 1080px;
+}
+
+.title_2 {
+    position: absolute;
+    top: 2289px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.msg {
+    /* 이슈 내용 폰트 스타일*/
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.Issue_2_inner > .msg {
+    position: absolute;
+    top: 2393px;
+}
+
+.Issue_2_inner > .date {
+    position: absolute;
+    top: 2490px;
+}
+
+.butter {
+    background-image: url("image/butter.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 2393px;
+    left: 830px;
+    width: 600px;
+    height: 370px;
+    box-shadow: 10px 60px 90px #c9c9c9;
+}
+
+.bts_mem {
+    background-image: url("image/bts_member.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 2393px;
+    left: 1620px;
+    width: 600px;
+    height: 370px;
+    box-shadow: 10px 60px 90px #c9c9c9;
+}
+
+.title_3 {
+    position: absolute;
+    top: 3523px;
+    left: 1184px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.Issue_3_inner {
+    margin: 0px 300px;
+    width: 1320px;
+    height: 1080px;
+}
+
+.Issue_3_inner > .msg {
+    position: absolute;
+    top: 3627px;
+    left: 1184px;
+}
+
+.Issue_3_inner > .date {
+    position: absolute;
+    top: 3725px;
+    left: 1184px;
+}
+
+.lalisa {
+    background-image: url("image/lalisa.jpg");
+    background-size: cover;
+    width: 660px;
+    height: 500px;
+    position: absolute;
+    top: 3290px;
+}
+
+.Issue_4_inner {
+    margin: 0px 300px;
+    width: 1320px;
+    height: 1080px;
+}
+
+.title_4 {
+    position: absolute;
+    top: 4460px;
+    left: 780px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.Issue_4_inner > .msg {
+    position: absolute;
+    top: 5021px;
+    left: 610px;
+}
+
+.Issue_4_inner > .date {
+    position: absolute;
+    top: 5160px;
+    left: 610px;
+}
+
+.squid_game {
+    background-image: url("image/squid_game.png");
+    background-size: cover;
+    width: 700px;
+    height: 426px;
+    position: absolute;
+    top: 4580px;
+    left: 610px;
+}
+
+.Issue_5_inner {
+    margin-left: 300px;
+    width: 1620px;
+    height: 1080px;
+}
+
+.title_5 {
+    font-size: 60px;
+}
+
+.title_5 > .first_row {
+    position: absolute;
+    top: 5600px;
+    left: 344px;
+    font-weight: bold;
+}
+
+.title_5 > .second_row {
+    position: absolute;
+    top: 5665px;
+    left: 344px;
+    font-weight: bold;
+}
+
+.Issue_5_inner > .msg {
+    position: absolute;
+    top: 5770px;
+    left: 344px;
+}
+
+.Issue_5_inner > .date {
+    position: absolute;
+    top: 5950px;
+    left: 344px;
+}
+
+.Issue_5_inner > .empty_box {
+    width: 530px;
+    height: 750px;
+    position: absolute;
+    top: 5498px;
+    background-color: #D8D7D7;
+}
+
+.battle_grounds {
+    background-image: url("image/battle_grounds.png");
+    background-size: cover;
+    width: 1110px;
+    height: 785px;
+    position: absolute;
+    top: 5695px;
+    right: 0px;
+}
+
+.page_up {
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    bottom: 50px;
+    left: 1765px;
+    width: 95px;
+    height: 25px;
+}
+
+.page_up_text {
+    width: 65px;
+    height: 100%;
+}
+
+.page_up_arrow {
+    width: 30px;
+    height: 100%;
+    padding-top: 4px;
+
+}
+
+.page_up_text,
+.page_up_arrow {
+    line-height: 25px;
+    font-family: 'Malgun Gothic';
+    color: #818181;
+    font-size: 14px;
+    font-weight: 100;
+}

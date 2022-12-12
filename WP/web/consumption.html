@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="consumption.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script src="jquery.easypiechart.js"></script>
+        <script>
+            function graphChange(id){
+                $(function () {
+                    $('.chart').easyPieChart({
+                        lineWidth: 40,
+                        lineCap: 'round',
+                        size: 250,
+                        barColor: '#2C3E50',
+                        trackColor: '#D8D7D7',
+                        scaleColor: false,
+                        animate: 1000
+                    });
+                    var newValue;
+                    if (id == "beauty"){
+                        newValue = 31.7;
+                    } else if (id == "fashion") {
+                        newValue = 29.2;
+                    } else if (id == "drama") {
+                        newValue = 31.0;
+                    } else if (id == "movie") {
+                        newValue = 28.6;
+                    } else if (id == "music") {
+                        newValue = 26.8;
+                    } else if (id == "show") {
+                        newValue = 28.6;
+                    } else if (id == "game") {
+                        newValue = 26.5;
+                    } else if (id == "ani") {
+                        newValue = 25.5;
+                    } else if (id == "food") {
+                        newValue = 22.4;
+                    }
+                    $('.chart').data('easyPieChart').update(newValue);
+                    $('span', $('.chart')).text(newValue + "%");
+                });
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <div class="header">
+                    <div class="show_info">
+                        <div class="list_black"></div>
+                    </div>
+                    <div class="group_nav">
+                        <ul class="nav">
+                            <li id="Home"><a href="#" onclick="location.href='home.html'">Home</a></li>
+                            <li id="Contents">
+                                <a href="#" onclick="location.href='contents_movie.html'">Contents</a>
+                                <div class="subnav_contents">
+                                    <a href="#" onclick="location.href='contents_movie.html'">Movie</a>
+                                    <a href="#" onclick="location.href='contents_drama.html'">Drama</a>
+                                    <a href="#" onclick="location.href='contents_actor.html'">Actor</a>
+                                    <a href="#" onclick="location.href='contents_singer.html'">Singer</a>
+                                </div>
+                            </li>
+                            <li id="Analysis">
+                                <a href="#">Analysis</a>
+                                <div class="subnav_analysis">
+                                    <a href="#" onclick="location.href='consumption.html'">해외 한류 소비 비중</a>
+                                    <a href="#" onclick="location.href='cs_main.html'">한류 현황</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="show_nav">
+                        <div class="show_nav_black"></div>
+                    </div>
+                </div>
+                <div class="title">
+                    <h1>consumption</h1>
+                </div>
+                <div class="section">
+                    <input type="radio" name="contents" id="beauty" onclick="graphChange(this.id)">
+                    <label for="beauty">뷰티</label>
+                    <input type="radio" name="contents" id="fashion" onclick="graphChange(this.id)">
+                    <label for="fashion">패션</label>
+                    <input type="radio" name="contents" id="drama" onclick="graphChange(this.id)">
+                    <label for="drama">드라마</label>
+                    <input type="radio" name="contents" id="movie" onclick="graphChange(this.id)">
+                    <label for="movie">영화</label>
+                    <input type="radio" name="contents" id="music" onclick="graphChange(this.id)">
+                    <label for="music">음악</label>
+                    <input type="radio" name="contents" id="show" onclick="graphChange(this.id)">
+                    <label for="show">예능</label>
+                    <input type="radio" name="contents" id="game" onclick="graphChange(this.id)">
+                    <label for="game">게임</label>
+                    <input type="radio" name="contents" id="ani" onclick="graphChange(this.id)">
+                    <label for="ani">애니메이션</label>
+                    <input type="radio" name="contents" id="food" onclick="graphChange(this.id)">
+                    <label for="food">음식</label>
+                </div>
+            </div>
+            <div class="gray_bg">
+                <div class="chart" data-percent=""><span class="percent">Plase click on the contents.</span></div>
+            </div>
+        </div>
+    </body>
+</html>

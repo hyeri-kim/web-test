@@ -1,0 +1,262 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.actor_bg {
+    width: 1920px;
+    height: 1080px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/squid_game_bg.jpg");
+    background-size: contain;
+
+}
+
+.container {
+    text-align: center;
+    width: 1620px;
+    height: 1080px;
+    margin-left: 300px;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    top: 52px;
+    width: 1320px;
+    height: 80px;
+}
+
+.show_info {
+    width: 80px;
+    height: 80px;
+}
+
+.list_white {
+    width: 20px;
+    height: 17px;
+    margin: 33px 30px;
+}
+
+.nav {
+    display: flex;
+    margin: 28px 230px;
+    font-size: 18px;
+}
+
+.nav>li>a:hover {
+    color: #D8D7D7;
+}
+
+#Contents,
+#Analysis {
+    margin-left: 250px;
+}
+
+/* subnav_contents */
+.subnav_contents {
+    display: none;
+    position: absolute;
+    left: 550px;
+    z-index: 1;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_contents>a {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_contents>a:hover {
+    font-weight: 500;
+}
+
+#Contents:hover>.subnav_contents {
+    display: block;
+}
+
+/* subnav_analysis */
+.subnav_analysis {
+    display: none;
+    position: absolute;
+    left: 880px;
+    z-index: 1;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_analysis>a {
+    display: block;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_analysis>a:hover {
+    font-weight: 500;
+}
+
+#Analysis:hover>.subnav_analysis {
+    display: block;
+}
+
+.show_nav {
+    width: 80px;
+    height: 80px;
+}
+
+.show_nav_white {
+    width: 15px;
+    height: 8px;
+    margin: 37px 32px;
+}
+
+.title {
+    margin-top: 261px;
+}
+
+.title>h1 {
+    /*margin-left: 30px;*/
+    font-size: 110px;
+    text-align: left;
+}
+
+.vm_box {
+    height: 60px;
+    margin-top: 52px;
+}
+
+.vm_inner {
+    width: 180px;
+    height: 60px;
+    border: 1px solid #fff;
+}
+
+.vm_inner>a {
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    top: 797px;
+    width: 1620px;
+    height: 283px;
+    text-align: left;
+}
+
+.footer_inner1 {
+    width: 311px;
+    height: 100%;
+    font-size: 24px;
+}
+
+.star_point {
+    display: flex;
+    height: 35px;
+    margin-top: 148px;
+}
+
+.star_rating {
+    /* 별 이미지 크기 */
+    margin-top: 2px;
+    width: 126px;
+}
+
+.star_rating,
+.star_rating>span {
+    /* 두개의 span에 동시에 주는 효과들 */
+    display: inline-block;
+    height: 21px;
+    overflow: hidden;
+    background: url("image/star.png")no-repeat;
+}
+
+.star_rating>span {
+    background-position: left bottom;
+    line-height: 0px;
+    vertical-align: top;
+}
+
+.point {
+    margin-left: 26px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer_inner2 {
+    width: 1309px;
+    height: 100%;
+    backdrop-filter: blur(18px);
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.summary {
+    margin-top: 55px;
+    margin-left: 52px;
+    display: flex;
+}
+
+.profile_header,
+.filmography_header {
+    font-weight: 700;
+}
+
+.profile_contents {
+    display: flex;
+    margin-top: 43px;
+    font-weight: 300;
+}
+
+.profile {
+    font-family: 'Malgun Godic';
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 30px;
+}
+
+.profile_info {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 15px;
+    line-height: 30px;
+}
+
+.filmography_inner {
+    margin-left: 230px;
+}
+
+.filmography_info {
+    display: flex;
+    margin-top: 43px;
+}
+
+.filmography_drama,
+.filmography_movie {
+    font-family: 'Malgun Godic';
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 30px;
+}
+
+.filmography_movie {
+    margin-left: 100px;
+}
+
+.filmography_drama span, .filmography_movie span {
+    font-weight: 100;
+    font-size: 14px;
+}

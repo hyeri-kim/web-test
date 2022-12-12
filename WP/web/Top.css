@@ -1,0 +1,178 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrap {
+    width: 1920px;
+    height: 1080px;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    position: absolute;
+    width: 1320px;
+    height: 132px;
+    margin: 0px 300px;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    top: 52px;
+    width: 1320px;
+    height: 80px;
+}
+
+.show_info {
+    width: 80px;
+    height: 80px;
+}
+
+.list_white {
+    width: 20px;
+    height: 17px;
+    margin: 33px 30px;
+}
+
+.nav {
+    display: flex;
+    margin: 28px 230px;
+    font-size: 18px;
+}
+
+.nav>li>a:hover {
+    color: #D8D7D7;
+}
+
+#Contents,
+#Analysis {
+    margin-left: 250px;
+}
+
+/* subnav_contents */
+.subnav_contents {
+    display: none;
+    position: absolute;
+    left: 550px;
+    z-index: 1;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_contents>a {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_contents>a:hover {
+    font-weight: 500;
+}
+
+#Contents:hover > .subnav_contents {
+    display: block;
+}
+
+/* subnav_analysis */
+.subnav_analysis {
+    display: none;
+    position: absolute;
+    left: 880px;
+    z-index: 1;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_analysis>a {
+    display: block;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_analysis>a:hover {
+    font-weight: 500;
+}
+
+#Analysis:hover>.subnav_analysis {
+    display: block;
+}
+
+.show_nav {
+    width: 80px;
+    height: 80px;
+}
+
+.show_nav_white {
+    width: 15px;
+    height: 8px;
+    margin: 37px 32px;
+}
+
+.inner {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+}
+
+.top1, .top2, .top3 {
+    position: relative;
+    width: 640px;
+    height: 1080px;
+    border: 2px solid #fff;
+    opacity: 0.4;
+}
+
+.top1:hover, .top2:hover, .top3:hover {
+    opacity: 1;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    top: 400px;
+    opacity: 1;
+}
+
+.top_text {
+    font-family: 'Malgun Gothic';
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.drama_title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.vm_box {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.vm_inner {
+    width: 130px;
+    height: 50px;
+    margin: 0px auto;
+    border: 1px solid #fff;
+}
+
+.vm_inner > a {
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}

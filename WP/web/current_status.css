@@ -1,0 +1,127 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.main_bg {
+    width: 1920px;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/game_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    width: 1320px;
+    height: 100%;
+    margin: 0px 300px;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 52px;
+    width: 1320px;
+    height: 80px;
+    z-index: 1;
+}
+
+.show_info {
+    width: 80px;
+    height: 80px;
+}
+
+.list_white {
+    width: 20px;
+    height: 17px;
+    margin: 33px 30px;
+}
+
+.nav {
+    display: flex;
+    margin: 28px 230px;
+    font-size: 18px;
+}
+
+.nav>li>a:hover {
+    color: #D8D7D7;
+}
+
+#Contents,
+#Analysis {
+    margin-left: 250px;
+}
+
+/* subnav_contents */
+.subnav_contents {
+    display: none;
+    position: absolute;
+    left: 550px;
+    z-index: 1;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_contents>a {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_contents>a:hover {
+    font-weight: 500;
+}
+
+#Contents:hover>.subnav_contents {
+    display: block;
+}
+
+/* subnav_analysis */
+.subnav_analysis {
+    display: none;
+    position: absolute;
+    left: 880px;
+    z-index: 1;
+    min-width: 200px;
+    padding-top: 30px;
+}
+
+.subnav_analysis>a {
+    display: block;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.subnav_analysis>a:hover {
+    font-weight: 500;
+}
+
+#Analysis:hover>.subnav_analysis {
+    display: block;
+}
+
+.show_nav {
+    width: 80px;
+    height: 80px;
+}
+
+.show_nav_white {
+    width: 15px;
+    height: 8px;
+    margin: 37px 32px;
+}
+
+.contents {
+    position: relative;
+    padding-top: 200px;
+}
